@@ -1,0 +1,3 @@
+[
+{"data":{"sourcelist":[{"id":"01","name":"中国电信","attckNum":4343,"attackGB":536149.4203},{"id":"02","name":"国内运营商","attckNum":229,"attackGB":12097.874300000003},{"id":"03","name":"国际运营商","attckNum":474,"attackGB":71457.4023}],"targetlist":[{"id":"01","name":"中国电信","attckNum":3877,"attackGB":211331.55129999988},{"id":"02","name":"国内运营商","attckNum":425,"attackGB":185424.32900000006},{"id":"03","name":"国际运营商","attckNum":142,"attackGB":149525.233}]},"date":"2018-05-28"}
+]

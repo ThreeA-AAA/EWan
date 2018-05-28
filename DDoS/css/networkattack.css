@@ -1,0 +1,739 @@
+﻿html,body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.navbar-inverse {
+    background-color: #373d44;
+    font-size: 16px;
+}
+.navbar-brand {
+    height: 70px;
+}
+.navbar-header button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+.bs-navbar-collapse ul li a {
+    line-height: 40px;
+}
+#dowebok {
+    /*margin-top: 70px;*/
+     margintop: 110px;
+    /*padding-top: 70px;*/
+    -moz-box-sizing: border-box;
+    /*Firefox3.5+*/
+    background-color: #232931;
+    -webkit-box-sizing: border-box;
+    /*Safari3.2+*/
+    
+    -o-box-sizing: border-box;
+    /*Opera9.6*/
+    
+    -ms-box-sizing: border-box;
+    /*IE8*/
+    
+    box-sizing: border-box;
+}
+#dowebok .fp-tableCell {
+    padding-bottom: 70px;
+}
+#fullPage-nav {
+    _display: none;
+    font-size: 12px;
+}
+#fullPage-nav ul li {
+    width: 30px;
+    /*90px;*/
+    
+    height: 21px;
+    margin: 10px 0 0;
+    vertical-align: middle;
+}
+#fullPage-nav ul li a {
+    float: right;
+    width: 21px;
+    height: 21px;
+    color: #8F9DA4;
+    text-decoration: none;
+    text-align: right;
+    background: url(../img/dot.png) 5px 5px no-repeat;
+}
+#fullPage-nav ul li .active {
+    background-position: 0 bottom;
+}
+#fullPage-nav span {
+    display: none;
+}
+.fullPage-tooltip {
+    float: left;
+    top: 0;
+    margin-right: 5px;
+    font: 12px "Microsoft Yahei";
+    color: #8F9DA4;
+    line-height: 21px;
+}
+#bar1,
+#map1 {
+    width: 100%;
+    height: 100%;
+   /*  margin-top: 70px;
+   padding-top: 70px;:  */
+    -moz-box-sizing: border-box;
+    /*Firefox3.5+*/
+    
+    -webkit-box-sizing: border-box;
+    /*Safari3.2+*/
+    
+    -o-box-sizing: border-box;
+    /*Opera9.6*/
+    
+    -ms-box-sizing: border-box;
+    /*IE8*/
+    
+    box-sizing: border-box;
+    /*padding-top: 70px;*/
+}
+.m-dlinepie-div {
+    width: 400px;
+    height: 300px;
+    bottom: 20px;
+    right: 80px;
+    position: absolute;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+.m-dlinepie-div .m-dlinepie-mark {
+    background: url("../img/graphIcon.png");
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: -21px;
+    right: -21px;
+    cursor: pointer;
+}
+#linepie {
+    width: 100%;
+    height: 100%;
+}
+.m-province {
+    position: absolute;
+    top: 100px;
+    left: 28px;
+    color: #fff;
+}
+.m-province-title {
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    background: #0071c6;
+    cursor: pointer;
+}
+.m-province-title a {
+    font-size: 12px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: -8px;
+}
+/* create an arrow that points up */
+
+.m-province-title.arrow-active:after {
+    content: '\25B2' !important;
+}
+.m-province-title.arrow-down:after {
+    content: '\25BC';
+    position: absolute;
+    right: 0px;
+    top: 15%;
+    width: 40px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    height: 70%;
+    line-height: 6px;
+}
+.m-province-wrapper {
+    position: relative;
+}
+.m-province-box {
+    position: absolute;
+    width: 420px;
+    /*height:244px;*/
+    
+    background: #023C75;
+    display: none;
+    box-shadow: 0 8px 7px rgba(0, 0, 0, 0.65);
+    z-index: 910;
+}
+.area-list {
+    line-height: 12px;
+    margin: 20px;
+}
+.area-list .area-group {
+    margin: 20px 0;
+}
+.area-list .area-group-name {
+    float: left;
+    color: #858a91;
+}
+.area-list .area-group-list {
+    padding-left: 36px;
+}
+.area-list .area-group-item {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #cdd5dc;
+}
+.area-list .area-group-item:hover {
+    text-decoration: underline;
+}
+.gradient {
+    background: -webkit-linear-gradient(#ffffff, #ffe7e2);
+    background: -o-linear-gradient(#ffffff, #ffe7e2);
+    background: linear-gradient(#ffffff, #ffe7e2);
+}
+#curriculum {
+    width: 600px;
+    height: 40px;
+    /*height:230px*/
+    
+    overflow: hidden;
+    font-family: 微软雅黑;
+    position: absolute;
+    bottom: 10px;
+    /*top:190px*/
+    /*left: 50%;*/
+    /*margin-left: -200px;*/
+    
+    left: 30px;
+    opacity: 0;
+    box-shadow: rgba(148, 92, 78, 0.74902) 0px 30px 80px;
+    z-index: 900;
+    transition: .6s;
+}
+#curriculum h2 {
+    margin-top: 0;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 20px 40px rgba(148, 92, 78, 0.1);
+    margin-bottom: 0
+}
+#curriculum h2:hover {
+    box-shadow: 0px 20px 40px rgba(148, 92, 78, 0.1);
+}
+#curriculum h2 strong {
+    display: block;
+    height: 40px;
+    background: url(../img/h2_ico.png) no-repeat 20px center;
+    text-indent: 52px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #f88a71;
+    line-height: 40px;
+    font-weight: normal;
+}
+#curriculum .closebg {
+    width: 18px;
+    height: 20px;
+    font-size: 18px;
+    color: #f88a71;
+    /*background: url(../img/close.png) no-repeat;*/
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+#curriculum .closebg:hover {
+   /*  -webkit-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -o-transform: rotate(360deg);
+   transform: rotate(360deg); */
+}
+#curriculum .closebg:active {
+    /* -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); */
+}
+#curriculum .-m-title {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 32px;
+    padding-bottom: 3px;
+    background: #f88a71;
+}
+#curriculum .-m-title span {
+    display: inline-block;
+    width: 100px;
+    float: left;
+    /*border: 1px solid #cc00cc;*/
+    
+    font-size: 14px;
+}
+#curriculum ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    top: 2px;
+    z-index: 2;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+}
+#curriculum ul li {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -ms-transform-origin: top;
+    -o-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0;
+}
+#curriculum ul li p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 12px;
+    width: 100%;
+    height: 35px;
+    color: #f4264d;
+    cursor: pointer;
+    background: rgba(250, 102, 66, 0.1);
+}
+#curriculum ul li:hover p {
+    background: rgba(250, 102, 66, 0.2);
+    box-shadow: 0px 30px 80px rgba(148, 92, 78, 0.4);
+}
+#curriculum ul li * {
+    transition: .5s;
+}
+#curriculum ul li span {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 35px;
+    line-height: 30px;
+}
+#maphead a{
+    color: #fff;
+}
+#maphead a:hover{
+    cursor: pointer;
+    color: #fff;
+}
+#maphead1 a{
+    color: #fff;
+}
+#maphead1 a:hover{
+    cursor: pointer;
+    color: #fff;
+}
+/* #curriculum .close { width:20px; height:20px; background:url(img/close.png) no-repeat; position:absolute; top:15px; right:16px; transition:0.5s;}
+#curriculum .close:hover{ -webkit-transform:rotate(360deg);}
+#curriculum .close:active{-webkit-transform:rotate(0deg);}
+#curriculum ul { position:relative; top:40px; z-index:2; -webkit-transform-style: preserve-3d; -webkit-perspective:800px;}
+#curriculum ul li { width:400px;
+ height:40px; 
+ -webkit-transform-origin:top;
+  -webkit-transform:rotateX(120deg); 
+  opacity:0;}
+#curriculum ul li *{ transition:.5s;}
+#curriculum ul li:hover p {
+    background:rgba(250,102,66,0.1);
+    box-shadow:0px 30px 80px rgba(148, 92, 78, 0.4);
+}
+#curriculum ul p strong, #curriculum ul span, #curriculum ul em { height:24px; line-height:24px; }
+#curriculum ul span { float:left; padding-left:10px; }
+#curriculum ul em { float:right; font-style:normal; padding-right:30px; background:url(img/em_bg.png) no-repeat right 4px; }
+#curriculum ul p { font-size:14px; color:#f4264d; cursor:pointer; background:rgba(250,102,66,0); height:24px; padding:8px 20px;}
+#curriculum ul p strong { float:left; width:84px; text-align:center; color:#fff; font-weight:normal; background:#f4264d;}
+#curriculum ul p:hover strong { background:#ffde00; box-shadow:0px 5px 20px rgba(148, 92, 78, 0.4); } */
+
+#map2 {
+    width: 100%;
+    height: 100%;
+/*     margin-top: 70px;
+padding-top: 70px; */
+}
+.cd-dropdown, .cd-select {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+.cd-dropdown > span {
+    width: 100%;
+    height: 35px;
+    background: #0071c6;
+    line-height: 35px;
+    color: #fff;
+    font-size: 12px;
+    /*background: #fff;*/
+    
+    display: block;
+    padding: 0 30px 0 20px;
+    position: relative;
+    cursor: pointer;
+}
+.cd-dropdown > span:after {
+    content: '\25BC';
+    position: absolute;
+    right: 0px;
+    top: 15%;
+    width: 40px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    height: 70%;
+    line-height: 6px;
+}
+.cd-dropdown.cd-active > span:after {
+    content: '\25B2';
+}
+.cd-dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+.cd-dropdown ul li {
+    display: block;
+}
+.cd-dropdown ul li span {
+    width: 100%;
+    background: #4f545a;
+    line-height: 35px;
+    height: 35px;
+    padding: 0 20px 0 30px;
+    display: block;
+    color: #AFADAD;
+    cursor: pointerP;
+    font-size: 12px;
+}
+.cd-dropdown > span, .cd-dropdown ul li span {
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Стили для обратной совместимости */
+
+.cd-select {
+    border: 1px solid #ddd;
+}
+.cd-dropdown > span, .cd-dropdown ul li:nth-last-child(-n+3) span {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.cd-dropdown ul {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.cd-dropdown ul li {
+    position: absolute;
+    width: 100%;
+}
+.cd-active.cd-dropdown > span, .cd-active.cd-dropdown ul li span {
+    0 3px 3px rgba(0, 0, 0, 0.3)
+}
+.cd-active.cd-dropdown ul li span {
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+.cd-active.cd-dropdown ul li span:hover {
+    background: #4d8c9d;
+    color: #fff;
+}
+#curriculum123 {
+    width: 840px;
+    height: 40px;
+    /*height:230px*/
+    
+    overflow: hidden;
+    font-family: 微软雅黑;
+    position: absolute;
+    bottom: 10px;
+    /*top:190px*/
+    /*left: 50%;*/
+    /*margin-left: -200px;*/
+    
+    left: 30px;
+    opacity: 0;
+    box-shadow: rgba(148, 92, 78, 0.74902) 0px 30px 80px;
+    transition: .6s;
+}
+#curriculum123 h2 {
+    margin-top: 0;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 20px 40px rgba(148, 92, 78, 0.1);
+    margin-bottom: 0px;
+}
+#curriculum123 h2:hover {
+    box-shadow: 0px 20px 40px rgba(148, 92, 78, 0.1);
+}
+#curriculum123 h2 strong {
+    display: block;
+    height: 40px;
+    background: url(../img/h2_ico.png) no-repeat 20px center;
+    text-indent: 52px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #f88a71;
+    line-height: 40px;
+    font-weight: normal;
+}
+#curriculum123 .closebg {
+     width: 18px;
+    height: 20px;
+    font-size: 18px;
+    color: #f88a71;
+    /*background: url(../img/close.png) no-repeat;*/
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    transition: .5s;
+    text-decoration: none;
+}
+/* #curriculum123 .closebg:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+#curriculum123 .closebg:active {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+} */
+#curriculum123 .-m-title {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+    line-height: 32px;
+    padding-bottom: 3px;
+    background: #f88a71;
+    text-align: center;
+}
+#curriculum123 .-m-title span {
+    display: inline-block;
+    width: 100px;
+    float: left;
+    /*border: 1px solid #cc00cc;*/
+    
+    font-size: 14px;
+}
+#curriculum123 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    top: 2px;
+    z-index: 2;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+}
+#curriculum123 ul li {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -ms-transform-origin: top;
+    -o-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0;
+}
+#curriculum123 ul li p {
+   /*  padding-left: 30px;
+   padding-right: 30px; */
+    font-size: 12px;
+    width: 100%;
+    height: 35px;
+    color: #f4264d;
+    cursor: pointer;
+    background: rgba(250, 102, 66, 0.1);
+}
+#curriculum123 ul li:hover p {
+    background: rgba(250, 102, 66, 0.2);
+    box-shadow: 0px 30px 80px rgba(148, 92, 78, 0.4);
+}
+#curriculum123 ul li * {
+    transition: .5s;
+}
+#curriculum123 ul li span {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+#linepie {
+    overflow: hidden;
+}
+/* css 过渡*/
+
+#ddos_pie {
+    transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    /* Firefox 4 */
+    
+    -webkit-transition: height 0.5s;
+    /* Safari 和 Chrome */
+    
+    -o-transition: height 0.5s;
+    /* Opera */
+}
+#ddos_pie1 {
+    transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    /* Firefox 4 */
+    
+    -webkit-transition: height 0.5s;
+    /* Safari 和 Chrome */
+    
+    -o-transition: height 0.5s;
+    /* Opera */
+}
+@keyframes pieMove {
+    from {
+        top: -26px;
+    }
+    to {
+        top: -21px;
+    }
+}
+@-moz-keyframes pieMove {
+    from {
+        top: -26px;
+    }
+    to {
+        top: -21px;
+    }
+}
+@-webkit-keyframes pieMove {
+    from {
+        top: -26px;
+    }
+    to {
+        top: -21px;
+    }
+}
+@-o-keyframes pieMove {
+    from {
+        top: -26px;
+    }
+    to {
+        top: -21px;
+    }
+}
+.m-dlinepie-mark {
+    animation: pieMove 0.8s alternate infinite;
+    -moz-animation: pieMove 0.8s alternate infinite;
+    -webkit-animation: pieMove 0.8s alternate infinite;
+    -o-animation: pieMove 0.8s alternate infinite;
+}
+
+.tishi{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 12px;
+    position: absolute;
+    
+    left: 10px;
+    width: 170px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+#maphead a .tishi{
+    top: -40px;
+    opacity:0;
+}
+#maphead a:hover .tishi{
+    top: 0px;
+    opacity:1;
+}
+#maphead1 a .tishi{
+    top: -40px;
+    opacity:0;
+}
+#maphead1 a:hover .tishi{
+    top: 0px;
+    opacity:1;
+}
+
+#maphead,#maphead1{
+    font-family: "微软雅黑";
+}
+.nav>li>a {padding: 20px 15px!important;line-height: 20px!important;}
+
+#message{
+    width: 100%;
+    top:-50px;
+    left:0;
+    position: absolute;
+    z-index: 1987;
+    padding:10px 15px;
+    margin:0;
+
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
